@@ -66,6 +66,10 @@ mlagents-learn
 ```
 - Click the play button on unity to start training your agent
 
+## If you want just the build
+[👉 Download the game here](https://xanthumr.itch.io/flappy-bird-ai)
+
+
 
 
 
