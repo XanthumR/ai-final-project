@@ -15,6 +15,8 @@ The AI acts as the **player**, learning how to survive longer and pass more obst
 The AI agent was trained using **Proximal Policy Optimization (PPO)** via Unity ML-Agents Toolkit. PPO is a policy-gradient method well-suited for continuous control tasks like our flappy-style game.
 
 - **Training Method**: Unity ML-Agents Toolkit (3.0.0)
+- **Max Step**: 10000
+- **Steps of Training**:1.000.000 
 - **Algorithm**: PPO (Proximal Policy Optimization)
 - **Agent Design**: Bird-like character with upward movement controlled by learned actions
 
