@@ -1,0 +1,56 @@
+{
+    "FlappyBird": {
+        "checkpoints": [
+            {
+                "steps": 499968,
+                "file_path": "results\\5observation2period-V2\\FlappyBird\\FlappyBird-499968.onnx",
+                "reward": null,
+                "creation_time": 1749854956.8134563,
+                "auxillary_file_paths": [
+                    "results\\5observation2period-V2\\FlappyBird\\FlappyBird-499968.pt"
+                ]
+            },
+            {
+                "steps": 500032,
+                "file_path": "results\\5observation2period-V2\\FlappyBird\\FlappyBird-500032.onnx",
+                "reward": null,
+                "creation_time": 1749854956.864177,
+                "auxillary_file_paths": [
+                    "results\\5observation2period-V2\\FlappyBird\\FlappyBird-500032.pt"
+                ]
+            },
+            {
+                "steps": 999943,
+                "file_path": "results\\5observation2period-V2\\FlappyBird\\FlappyBird-999943.onnx",
+                "reward": 96.03998929262161,
+                "creation_time": 1749856463.7718554,
+                "auxillary_file_paths": [
+                    "results\\5observation2period-V2\\FlappyBird\\FlappyBird-999943.pt"
+                ]
+            },
+            {
+                "steps": 1000007,
+                "file_path": "results\\5observation2period-V2\\FlappyBird\\FlappyBird-1000007.onnx",
+                "reward": 96.03998929262161,
+                "creation_time": 1749856463.8310013,
+                "auxillary_file_paths": [
+                    "results\\5observation2period-V2\\FlappyBird\\FlappyBird-1000007.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000007,
+            "file_path": "results\\5observation2period-V2\\FlappyBird.onnx",
+            "reward": 96.03998929262161,
+            "creation_time": 1749856463.8310013,
+            "auxillary_file_paths": [
+                "results\\5observation2period-V2\\FlappyBird\\FlappyBird-1000007.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
