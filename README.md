@@ -20,13 +20,15 @@ The AI agent was trained using **Proximal Policy Optimization (PPO)** via Unity 
 - **Algorithm**: PPO (Proximal Policy Optimization)
 - **Agent Design**: Bird-like character with upward movement controlled by learned actions
 
+- You can find more info about the model in 5observation2period-V2 folder
+
 ## 🛠️ Tools & Frameworks
 
-- **Game Engine**: Unity
-- **AI Toolkit**: Unity ML-Agents
+- **Game Engine**: Unity 6000.0.30f1
+- **AI Toolkit**: Unity ML-Agents 3.0.0
 - **Scripting**: C#
-- **Training Backend**: Python (ML-Agents + PyTorch)
-- **OS Tested**: Windows
+- **Training Backend**: Python 3.10.11 (ML-Agents 1.1.0 + PyTorch 2.2.1)
+- **OS Tested**: Windows 11
 
 ## 📦 Installation
 
@@ -57,6 +59,7 @@ pip install mlagents
 pip install torch~=2.2.1 --index-url https://download.pytorch.org/whl/cu121
 ```
 - In unity you should create a script that extends Agent class and attach that script to your player game object
+- Your Agent script should be according to your own player's logic
 - Use mlagents-learn to start training
 ```bash
 mlagents-learn
