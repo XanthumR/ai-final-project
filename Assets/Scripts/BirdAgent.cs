@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
@@ -11,7 +12,10 @@ public class BirdAgent : Agent
     private Vector3 startPos;
     private float flapStrength = 6f;
     public List<Pipe_Manager> pipes;
+    public TextMeshProUGUI scoreUI;
+    public TextMeshProUGUI previousScoreUI;
     int score = 0;
+    int previousScore = 0;
 
     public override void Initialize()
     {
@@ -35,6 +39,7 @@ public class BirdAgent : Agent
     {
         transform.position = startPos;
         rg.linearVelocity = Vector2.zero;
+        previousScoreUI.SetText("Previous Score Score " + previousScore);
         Debug.Log("episode begun");
 
         foreach (Pipe_Manager pipe in pipes)
@@ -78,16 +83,17 @@ public class BirdAgent : Agent
     private void OnCollisionEnter2D(Collision2D collision)
     {
         SetReward(-1f);
-        Debug.Log("-1");
-        Debug.Log(score);
+        previousScore = score;
         score = 0;
+        scoreUI.SetText("Score " + score);
+
         EndEpisode();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         AddReward(1f); // Passed a pipe
-        Debug.Log("+1");
         score++;
+        scoreUI.SetText("Score "+score);
     }
 }
